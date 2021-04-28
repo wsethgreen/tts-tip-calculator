@@ -5,13 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tip Calculator</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="allItems">
     <form action="">
         <h2>Bill Total: </h2>
-        <input class="bill_input" type="number">
+        <input class="bill_input" type="number"> 
         <h2>Number of Guests: </h2>
         <input class="num_guests" type="number">
         <h2>Quality of Service: </h2>
@@ -23,21 +26,28 @@
             <input type="radio" name="service" id="Good">
             <label for="Good">Good</label>
         </div>
+        <br>
         <button class="submit_btn">Calculate Tip</button>
     </form>
-
+<br>
+<br>
     <div class="tip_container">
-        <h2>Bill Total</h2>
+        <h2 class="billTotal borders" >Bill Total</h2>
             <p class="bill_total"></p>
-        <h2>Total Tip</h2>
+            <br>
+        <h2 class ="totalTip borders" >Total Tip</h2>
             <p class="tip_total"></p>
-        <h2>Grand Total</h2>
+            <br>
+        <h2 class ="grandTotal borders" >Grand Total</h2>
             <p class="grand_total"></p>
-        <h2>Total Amount per person</h2>
+            <br>
+        <h2 class ="perPerson borders" >Total Amount per person</h2>
             <p class="amount_per_person"></p>
+            <br>
     </div>
 
     </div>
+</div class="allItems">
     <script src="scripts/script.js" defer></script>
 </body>
 </html>
