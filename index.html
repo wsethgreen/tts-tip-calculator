@@ -7,24 +7,24 @@
     <title>Tip Calculator</title>
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="allItems">
     <form action="">
         <h2>Bill Total: </h2>
-        <input class="bill_input" type="number"> 
+        <input class="bill_input inputSizing" type="number" placeholder="Ex: $30.00"> 
         <h2>Number of Guests: </h2>
-        <input class="num_guests" type="number">
+        <input class="num_guests inputSizing" type="number" placeholder="Ex: 4">
         <h2>Quality of Service: </h2>
         <div class="radio_btns">
             <input type="radio" name="service" id="Bad">
             <label for="Bad">Bad</label>
             <input type="radio" name="service" id="Mediocre">
             <label for="Mediocre">Mediocre</label>
-            <input type="radio" name="service" id="Good">
-            <label for="Good">Good</label>
+            <input type="radio" name="service" id="excellent">
+            <label for="Good">Excellent</label>
         </div>
         <br>
         <button class="submit_btn">Calculate Tip</button>
@@ -32,16 +32,16 @@
 <br>
 <br>
     <div class="tip_container">
-        <h2 class="billTotal borders" >Bill Total</h2>
+        <h2 class="billTotal borders">Bill Total</h2>
             <p class="bill_total"></p>
             <br>
-        <h2 class ="totalTip borders" >Total Tip</h2>
+        <h2 class ="totalTip borders">Total Tip</h2>
             <p class="tip_total"></p>
             <br>
-        <h2 class ="grandTotal borders" >Grand Total</h2>
+        <h2 class ="grandTotal borders">Grand Total</h2>
             <p class="grand_total"></p>
             <br>
-        <h2 class ="perPerson borders" >Total Amount per person</h2>
+        <h2 class ="perPerson borders">Total Amount per person</h2>
             <p class="amount_per_person"></p>
             <br>
     </div>

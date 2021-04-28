@@ -34,7 +34,8 @@ submit.addEventListener('click', (e) => {
    
     grandTotal = grandTotal.toFixed(2);
     perPerson = perPerson.toFixed(2);
-
+   
+   
     // Update inner HTML for Bill Amount, Tip Amount, Grand Total, and Total per Person
     document.querySelector('.bill_total').innerHTML = `$${billAmount}`;
     document.querySelector('.tip_total').innerHTML = `$${tip_total}`;
