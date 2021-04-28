@@ -4,10 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
+    <form action="">
+        <h2>Bill Total: </h2>
+        <input type="text">
+        <h2>Number of Guests: </h2>
+        <input type="text">
+        <h2>Quality of Service: </h2>
+        <div class="radio_btns">
+            <input type="radio" name="service" id="Bad">
+            <label for="Bad">Bad</label>
+            <input type="radio" name="service" id="Mediocre">
+            <label for="Mediocre">Mediocre</label>
+            <input type="radio" name="service" id="Good">
+            <label for="Good">Good</label>
+        </div>
+        <button class="submit_btn">Calculate Tip</button>
+    </form>
+
+    <div class="tip_container">
+        <h2>Bill Total</h2>
+            <p class="bill_total"></p>
+        <h2>Total Tip</h2>
+            <p class="tip_total"></p>
+        <h2>Grand Total</h2>
+            <p class="grand_total"></p>
+        <h2>Total Amount per person</h2>
+            <p class="amount_per_person"></p>
+    </div>
+
+
+
 
     <script src="scripts/script.js"></script>
 </body>
