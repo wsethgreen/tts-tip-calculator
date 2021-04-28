@@ -9,13 +9,33 @@
 </head>
 <body>
     
-<div class="input_container"
-    <input type ="text">
-    <input type ="text">
-    <div class="radio_btns">
-        <input type="radio" name="" id="">
-        <input type="radio" name="" id="">
-        <input type="radio" name="" id="">
+    <form action="">
+        <h2>Bill Total: </h2>
+        <input type="text">
+        <h2>Number of Guests: </h2>
+        <input type="text">
+        <h2>Quality of Service: </h2>
+        <div class="radio_btns">
+            <input type="radio" name="service" id="Bad">
+            <label for="Bad">Bad</label>
+            <input type="radio" name="service" id="Mediocre">
+            <label for="Mediocre">Mediocre</label>
+            <input type="radio" name="service" id="Good">
+            <label for="Good">Good</label>
+        </div>
+        <button class="submit_btn">Calculate Tip</button>
+    </form>
+
+    <div class="tip_container">
+        <h2>Bill Total</h2>
+            <p class="bill_total"></p>
+        <h2>Total Tip</h2>
+            <p class="tip_total"></p>
+        <h2>Grand Total</h2>
+            <p class="grand_total"></p>
+        <h2>Total Amount per person</h2>
+            <p class="amount_per_person"></p>
+    </div>
 
     </div>
     <script src="scripts/script.js" defer></script>
