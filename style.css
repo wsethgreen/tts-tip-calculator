@@ -1,0 +1,67 @@
+* {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+html {
+  background-image: url(images/cash2.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  padding-top: 2%;
+}
+
+.inputSizing {
+  font-size: 20px;
+  padding: 5px 0;
+  font-weight: bold;
+}
+
+.allItems {
+  background-color: rgba(84, 109, 109, 0.97);
+  color: rgb(249, 247, 246);
+  width: 25%;
+  margin: auto;
+  padding: 10px 0;
+  border: 5px solid rgb(37, 34, 32);
+  border-radius: 3px;
+}
+
+input[type="radio"] {
+  margin-left: 10px;
+}
+
+label {
+  font-size: 22px;
+}
+
+.borders {
+  border: 3px solid rgb(214, 191, 212);
+  border-radius: 3px;
+  width: fit-content;
+  margin: 0 auto 0 auto;
+  padding: 0 10px;
+  white-space: nowrap;
+}
+
+.submit_btn {
+  font-size: 25px;
+  padding: 10px 27px;
+  margin: 20px auto;
+  background-color: rgb(158, 194, 149);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.submit_btn:hover {
+  background-color: rgb(249, 248, 246);
+}
+
+p {
+  font-size: 21px;
+}
