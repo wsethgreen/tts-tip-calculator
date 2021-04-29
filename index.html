@@ -14,14 +14,14 @@
     <div class="allItems">
     <form action="">
         <h2>Bill Total: </h2>
-        <input class="bill_input inputSizing" type="number" placeholder="Ex: $30.00"> 
+        <input class="bill_input inputSizing" type="number" placeholder="Ex: $30.00" onchange="setTwoNumberDecimal(this)"> 
         <h2>Number of Guests: </h2>
-        <input class="num_guests inputSizing" type="number" placeholder="Ex: 4">
+        <input class="num_guests inputSizing" type="number" placeholder="Ex: 4" onchange="setNoDecimal(this)">
         <h2>Quality of Service: </h2>
         <div class="radio_btns">
             <input type="radio" name="service" id="Bad">
             <label for="Bad">Bad</label>
-            <input type="radio" name="service" id="Mediocre">
+            <input type="radio" name="service" id="Mediocre" checked>
             <label for="Mediocre">Mediocre</label>
             <input type="radio" name="service" id="excellent">
             <label for="Good">Excellent</label>
