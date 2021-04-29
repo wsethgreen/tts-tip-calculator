@@ -13,6 +13,13 @@ submit.addEventListener('click', (e) => {
 
     let numGuests = document.querySelector('.num_guests').value;
 
+    // billAmount.oninput = function leadingDollar(input){
+    //     if(input.value >= 1){
+    //         input.value = '$' + input.value;
+    //     }
+    //     return input.value
+    // }
+    // leadingDollar(billAmount)
     // Create variable for tip amount
     // let tip_total = 0;
    
