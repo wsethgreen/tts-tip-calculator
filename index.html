@@ -14,17 +14,17 @@
     <div class="allItems">
     <form action="">
         <h2>Bill Total: </h2>
-        <input class="bill_input inputSizing" type="number" placeholder="Ex: $30.00" onchange="setTwoNumberDecimal(this)"> 
+        <input class="bill_input inputSizing" type="number" placeholder="Ex: $30.00" oninput="setTwoNumberDecimal(this)"> 
         <h2>Number of Guests: </h2>
-        <input class="num_guests inputSizing" type="number" placeholder="Ex: 4" onchange="setNoDecimal(this)">
+        <input class="num_guests inputSizing" type="number" placeholder="Ex: 4" oninput="setNoDecimal(this)">
         <h2>Quality of Service: </h2>
         <div class="radio_btns">
             <input type="radio" name="service" id="Bad">
-            <label for="Bad">Bad</label>
+            <label for="Bad">Bad - 15%</label>
             <input type="radio" name="service" id="Mediocre" checked>
-            <label for="Mediocre">Mediocre</label>
+            <label for="Mediocre">Mediocre - 20%</label>
             <input type="radio" name="service" id="excellent">
-            <label for="Good">Excellent</label>
+            <label for="Good">Excellent - 25%</label>
         </div>
         <br>
         <button class="submit_btn">Calculate Tip</button>
@@ -33,16 +33,16 @@
 <br>
     <div class="tip_container">
         <h2 class="billTotal borders">Bill Total</h2>
-            <p class="bill_total"></p>
+            <p class="bill_total">&nbsp;</p>
             <br>
         <h2 class ="totalTip borders">Total Tip</h2>
-            <p class="tip_total"></p>
+            <p class="tip_total">&nbsp;</p>
             <br>
         <h2 class ="grandTotal borders">Grand Total</h2>
-            <p class="grand_total"></p>
+            <p class="grand_total">&nbsp;</p>
             <br>
         <h2 class ="perPerson borders">Total Amount per person</h2>
-            <p class="amount_per_person"></p>
+            <p class="amount_per_person">&nbsp;</p>
             <br>
     </div>
 
