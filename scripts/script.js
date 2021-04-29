@@ -4,8 +4,8 @@ const cashSound = new Audio("sounds/rc_tycoon_money.mp3");
 
 // Sets two decimal places for bill amount when user clicks out of input
 function setTwoNumberDecimal(el) {
-//   el.value = parseFloat(el.value).toFixed(2);
-  el.value = Math.trunc(el.value*Math.pow(10, 2))/Math.pow(10, 2);
+  el.value = Math.trunc(el.value * Math.pow(10, 2)) / Math.pow(10, 2);
+  //   el.value = parseFloat(el.value).toFixed(2);
 }
 
 // Sets no decimal places for number of guests when user clicks out of input
@@ -13,11 +13,13 @@ function setNoDecimal(el) {
   el.value = parseFloat(el.value).toFixed(0);
 }
 
-// click function to take inputs and calculate grand total/tip amount
+// Click function to take inputs and calculate grand total/tip amount
 submit.addEventListener("click", (e) => {
-  // prevent page refresh
+  // Prevent page refresh
   e.preventDefault();
+  // 'Cash sound plays
   cashSound.play();
+
   let billAmount = document.querySelector(".bill_input").value;
   let numGuests = document.querySelector(".num_guests").value;
 
@@ -26,11 +28,11 @@ submit.addEventListener("click", (e) => {
 
   // Alerts the user to missing input fields
   if (billAmount === "" && numGuests === "") {
-    alert("Enter an amount for both!");
+    alert("Enter an amount for bill total and guests!");
   } else if (billAmount === "") {
-    alert("Put an amount in bill total!");
+    alert("Enter an amount for bill total!");
   } else if (numGuests === "") {
-    alert("Put an amount in number of guests!");
+    alert("Enter an amount for number of guests!");
   }
 
   // Math for tip percentage with two decimal places

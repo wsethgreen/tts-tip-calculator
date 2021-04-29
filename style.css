@@ -28,11 +28,19 @@ body {
   margin: auto;
   padding: 10px 0;
   border: 5px solid rgb(37, 34, 32);
-  border-radius: 3px;
+  border-radius: 4px;
 }
 
 input[type="radio"] {
   margin-left: 10px;
+}
+
+.radio_btns {
+  border: 4px solid rgb(37, 34, 32);
+  border-radius: 4px;
+  width: fit-content;
+  margin: auto;
+  padding: 10px 15px;
 }
 
 label {
@@ -41,7 +49,7 @@ label {
 
 .borders {
   border: 3px solid rgb(214, 191, 212);
-  border-radius: 3px;
+  border-radius: 4px;
   width: fit-content;
   margin: 0 auto 0 auto;
   padding: 0 10px;
