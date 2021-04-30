@@ -19,12 +19,21 @@
         <input class="num_guests inputSizing" type="number" placeholder="Ex: 4" oninput="setNoDecimal(this)">
         <h2>Quality of Service: </h2>
         <div class="radio_btns">
-            <input type="radio" name="service" id="Bad">
-            <label for="Bad">Bad - 15%</label>
-            <input type="radio" name="service" id="Mediocre" checked>
-            <label for="Mediocre">Mediocre - 20%</label>
-            <input type="radio" name="service" id="excellent">
-            <label for="Good">Excellent - 25%</label>
+            <div class="individualBtn">
+                <input type="radio" name="service" id="Bad">
+                <label for="Bad">Bad</label>
+                <p>15%</p>
+            </div>
+            <div class="individualBtn">
+                <input type="radio" name="service" id="Mediocre" checked>
+                <label for="Mediocre">Mediocre</label>
+                <p>20%</p>
+            </div>
+            <div class="individualBtn">
+                <input type="radio" name="service" id="excellent">
+                <label for="Good">Excellent</label>
+                <p>25%</p>
+            </div>
         </div>
         <br>
         <button class="submit_btn">Calculate Tip</button>
