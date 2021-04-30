@@ -5,41 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tip Calculator</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="allItems">
     <form action="">
         <h2>Bill Total: </h2>
-        <input type="text">
+        <input class="bill_input inputSizing" type="number" placeholder="Ex: $30.00" oninput="setTwoNumberDecimal(this)"> 
         <h2>Number of Guests: </h2>
-        <input type="text">
+        <input class="num_guests inputSizing" type="number" placeholder="Ex: 4" oninput="setNoDecimal(this)">
         <h2>Quality of Service: </h2>
         <div class="radio_btns">
-            <input type="radio" name="service" id="Bad">
-            <label for="Bad">Bad</label>
-            <input type="radio" name="service" id="Mediocre">
-            <label for="Mediocre">Mediocre</label>
-            <input type="radio" name="service" id="Good">
-            <label for="Good">Good</label>
+            <div class="individualBtn">
+                <input type="radio" name="service" id="Bad">
+                <label for="Bad">Bad</label>
+                <p>15%</p>
+            </div>
+            <div class="individualBtn">
+                <input type="radio" name="service" id="Mediocre" checked>
+                <label for="Mediocre">Mediocre</label>
+                <p>20%</p>
+            </div>
+            <div class="individualBtn">
+                <input type="radio" name="service" id="excellent">
+                <label for="Good">Excellent</label>
+                <p>25%</p>
+            </div>
         </div>
+        <br>
         <button class="submit_btn">Calculate Tip</button>
     </form>
-
+<br>
+<br>
     <div class="tip_container">
-        <h2>Bill Total</h2>
-            <p class="bill_total"></p>
-        <h2>Total Tip</h2>
-            <p class="tip_total"></p>
-        <h2>Grand Total</h2>
-            <p class="grand_total"></p>
-        <h2>Total Amount per person</h2>
-            <p class="amount_per_person"></p>
+        <h2 class="billTotal borders">Bill Total</h2>
+            <p class="bill_total">&nbsp;</p>
+            <br>
+        <h2 class ="totalTip borders">Total Tip</h2>
+            <p class="tip_total">&nbsp;</p>
+            <br>
+        <h2 class ="grandTotal borders">Grand Total</h2>
+            <p class="grand_total">&nbsp;</p>
+            <br>
+        <h2 class ="perPerson borders">Total Amount per person</h2>
+            <p class="amount_per_person">&nbsp;</p>
+            <br>
     </div>
 
-
-
-
-    <script src="scripts/script.js"></script>
+    </div>
+</div class="allItems">
+    <script src="scripts/script.js" defer></script>
 </body>
 </html>
